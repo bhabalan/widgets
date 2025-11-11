@@ -144,7 +144,7 @@ We are using [Airbnb-style lint rules](https://github.com/airbnb/javascript) and
 Make sure your code your code follows our lint rules before submitting!
 
 For more information on contributions, please visit
-[our contributing guide](https://github.com/webex/widgets/blob/master/CONTRIBUTING.md).
+[our contributing guide](https://github.com/webex/widgets/blob/master/CONTRIBUTING.md)
 
 #### Commit linter
 
