@@ -1,0 +1,49 @@
+name: Claude PR Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, ready_for_review, reopened]
+
+jobs:
+  claude-review:
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+      actions: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          track_progress: true
+          prompt: |
+            REPO: ${{ github.repository }}
+            PR NUMBER: ${{ github.event.pull_request.number }}
+
+            Review this pull request thoroughly. Focus on:
+
+            1. **Code Quality**: Style consistency, meaningful names, DRY principle, no commented-out code
+            2. **Bugs & Logic Errors**: Off-by-one errors, null/undefined handling, race conditions
+            3. **Security**: No hardcoded secrets, proper input validation, XSS/injection risks
+            4. **Performance**: Unnecessary re-renders, missing memoization, expensive operations in loops
+            5. **TypeScript**: Proper types (avoid `any`), correct generics, missing null checks
+            6. **Tests**: Adequate coverage for new/changed code, edge cases addressed
+
+            This is a monorepo with yarn workspaces. Key packages are under packages/contact-center/.
+            Architecture: Widget (observer HOC) -> Custom Hook -> Presentational Component -> Store -> SDK.
+
+            Use `gh pr comment` for top-level summary feedback.
+            Use `mcp__github_inline_comment__create_inline_comment` (with `confirmed: true`) for specific code issues.
+            Only post GitHub comments - don't submit review text as messages.
+
+          claude_args: |
+            --max-turns 15
+            --allowedTools "mcp__github_inline_comment__create_inline_comment,Bash(gh pr comment:*),Bash(gh pr diff:*),Bash(gh pr view:*),Read,Glob,Grep"
+        env:
+          ANTHROPIC_BASE_URL: ${{ secrets.ANTHROPIC_BEDROCK_BASE_URL }}

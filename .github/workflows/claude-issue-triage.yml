@@ -1,0 +1,49 @@
+name: Claude Issue Triage
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  claude-triage:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            REPO: ${{ github.repository }}
+            ISSUE NUMBER: ${{ github.event.issue.number }}
+            TITLE: ${{ github.event.issue.title }}
+            BODY: ${{ github.event.issue.body }}
+            AUTHOR: ${{ github.event.issue.user.login }}
+
+            Analyze this new issue and perform triage:
+
+            1. Determine type: bug report, feature request, question, or documentation issue
+            2. Assess priority: critical, high, medium, low
+            3. Check if it duplicates existing open issues (search with gh)
+            4. Identify which package(s) are likely affected (packages under packages/contact-center/)
+            5. If it's a bug, check if the described area has known patterns or recent changes
+
+            Post a triage comment summarizing:
+            - Issue type and suggested priority
+            - Affected package(s)
+            - Any duplicate candidates found
+            - Suggested next steps
+
+            Apply appropriate labels using `gh issue edit` with --add-label.
+
+          claude_args: |
+            --max-turns 10
+            --allowedTools "Bash(gh issue:*),Bash(gh search:*),Bash(gh label:*),Read,Glob,Grep"
+        env:
+          ANTHROPIC_BASE_URL: ${{ secrets.ANTHROPIC_BEDROCK_BASE_URL }}
