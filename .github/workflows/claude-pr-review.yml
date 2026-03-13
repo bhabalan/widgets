@@ -47,3 +47,5 @@ jobs:
             --allowedTools "mcp__github_inline_comment__create_inline_comment,Bash(gh pr comment:*),Bash(gh pr diff:*),Bash(gh pr view:*),Read,Glob,Grep"
         env:
           ANTHROPIC_BASE_URL: ${{ secrets.ANTHROPIC_BEDROCK_BASE_URL }}
+          CLAUDE_CODE_USE_BEDROCK: 1
+          CLAUDE_CODE_SKIP_BEDROCK_AUTH: 1
