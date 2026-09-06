@@ -1,0 +1,290 @@
+{
+  "@webex/cc-components": {
+    "1.28.0-ccconnectors.1": {
+      "published_date": 1763442161148,
+      "commits": {
+        "2a99b703b914e81d5f89f580a1e8e767a65f6aaa": "chore(tooling): cache built distributables for deploy",
+        "0ffe5b41c849df32773ef03521fe0ad03f0c9881": "chore(tooling): dummy change to trigger a publish",
+        "6818129a2b00e0c2a10c7ee7721327a52c9b3ed2": "chore(tooling): remove yarn ws:tools from publish-tag",
+        "a5657fed2c3155fcc823d586642f093bd9a551c4": "chore(tooling): publish-tag on commit to ccwidgets branch",
+        "52f482ac00582a77b7d1e3f914210c05bb5cb33b": "chore(tooling): dummy commit to trigger a publish",
+        "c10ac1175a639c89f30b66839e77cd387cf3e71f": "fix(tooling): deploy action yarn dry run with -W flag",
+        "714cf19e76c56e4161d6e161532476155087964e": "Revert \"chore(tooling): dummy changes to trigger publish\"",
+        "3ced1090cf679b65e842a6ea2b15f72b231ce410": "fix(tooling): remove exec vulnerability in deploy.yml",
+        "2e0f5a79a9593b254add8f7d0494c1c7a9408c47": "chore(tooling): dummy changes to trigger publish",
+        "055166779b6b95d49a38c36f0ade5e5f3857a120": "fix(tooling): optimize build pipeline for deploy",
+        "21b81142cb518ad813ad0370b6321f06309d40d5": "fix(tooling): dont deploy if no changed packages"
+      },
+      "alongWith": {
+        "@webex/widgets": "1.28.2-v1.28",
+        "@webex/cc-widgets": "1.28.0-ccwidgets.4",
+        "@webex/cc-station-login": "1.28.0-alpha.11"
+      }
+    },
+    "1.28.0-ccwidgets.126": {
+      "published_date": 1764068359556,
+      "commits": {
+        "93c5ba91920318e4db5c1defb79121df458c7607": "Merge branch 'ccwidgets' into ccwidgets",
+        "b27e3cb805fb1780169088ba66f30da7d0e85b5d": "chore(release): 1.28.0-ccwidgets.126 [skip ci]",
+        "58a2219aa4afbac016a82206890391eb60ddf8e0": "fix(widgets): fixed-outbound-fail-error (#555)",
+        "3d520c610ced7d92ce70e81563cfe9bf82cf401f": "chore(release): 1.28.0-ccwidgets.125 [skip ci]",
+        "f657c7ecde7cee3e70d6f20f483b731c144a6368": "fix(station-login): visibility toggle for desktop login (#554)",
+        "9294d8f5acf0288e2fb9091f685b23d1e6619ff5": "chore(release): 1.28.0-ccwidgets.124 [skip ci]",
+        "ab5fd64e6c8b6c9efaf85281d9b31cd5cac8a32e": "fix(cc-task): visibility toggle for conference feature (#553)",
+        "2ff45cd74fd3d8e7f1c0ab901341c0ce0e389100": "chore(release): 1.28.0-ccwidgets.123 [skip ci]",
+        "f2a23d4650fdf55ac9c44d489f45f13b3650341a": "feat(cc-widgets): multi party conference (#539)",
+        "6a2358cc8b7c5f23488cdfdc263983be54714af3": "chore(release): 1.28.0-ccwidgets.122 [skip ci]",
+        "a08cc66ef0a7fea0224a4c4f3bc899781c1ff6d8": "fix(cc-widgets): add license in package.json (#549)"
+      },
+      "alongWith": {
+        "@webex/cc-widgets": "1.28.0-ccwidgets.126",
+        "@webex/cc-station-login": "1.28.0-ccwidgets.126",
+        "@webex/cc-store": "1.28.0-ccwidgets.126",
+        "@webex/cc-task": "1.28.0-ccwidgets.126",
+        "@webex/test-fixtures": "0.0.0-ccwidgets.0",
+        "@webex/cc-ui-logging": "1.28.0-ccwidgets.126",
+        "@webex/cc-user-state": "1.28.0-ccwidgets.126",
+        "samples-cc-react-app": "0.0.0-ccwidgets.0",
+        "samples-cc-wc-app": "0.0.0-ccwidgets.0"
+      }
+    }
+  },
+  "@webex/cc-widgets": {
+    "1.28.0-ccwidgets.4": {
+      "published_date": 1763442161147,
+      "commits": {
+        "2a99b703b914e81d5f89f580a1e8e767a65f6aaa": "chore(tooling): cache built distributables for deploy",
+        "0ffe5b41c849df32773ef03521fe0ad03f0c9881": "chore(tooling): dummy change to trigger a publish",
+        "6818129a2b00e0c2a10c7ee7721327a52c9b3ed2": "chore(tooling): remove yarn ws:tools from publish-tag",
+        "a5657fed2c3155fcc823d586642f093bd9a551c4": "chore(tooling): publish-tag on commit to ccwidgets branch",
+        "52f482ac00582a77b7d1e3f914210c05bb5cb33b": "chore(tooling): dummy commit to trigger a publish",
+        "c10ac1175a639c89f30b66839e77cd387cf3e71f": "fix(tooling): deploy action yarn dry run with -W flag",
+        "714cf19e76c56e4161d6e161532476155087964e": "Revert \"chore(tooling): dummy changes to trigger publish\"",
+        "3ced1090cf679b65e842a6ea2b15f72b231ce410": "fix(tooling): remove exec vulnerability in deploy.yml",
+        "2e0f5a79a9593b254add8f7d0494c1c7a9408c47": "chore(tooling): dummy changes to trigger publish",
+        "055166779b6b95d49a38c36f0ade5e5f3857a120": "fix(tooling): optimize build pipeline for deploy",
+        "21b81142cb518ad813ad0370b6321f06309d40d5": "fix(tooling): dont deploy if no changed packages"
+      },
+      "alongWith": {
+        "@webex/widgets": "1.28.2-v1.28",
+        "@webex/cc-components": "1.28.0-ccconnectors.1",
+        "@webex/cc-station-login": "1.28.0-alpha.11"
+      }
+    },
+    "1.28.0-ccwidgets.125": {
+      "published_date": 1763976336157,
+      "commits": {
+        "344bd9fdef26eac6c1fb2d9ea483092e0a3734c4": "chore(tooling): dummy commit to trigger a release"
+      },
+      "alongWith": {
+        "@webex/cc-station-login": "1.28.0-ccwidgets.125",
+        "samples-cc-react-app": "0.0.0-ccwidgets.0",
+        "samples-cc-wc-app": "0.0.0-ccwidgets.0"
+      }
+    },
+    "1.28.0-ccwidgets.126": {
+      "published_date": 1764068359555,
+      "commits": {
+        "93c5ba91920318e4db5c1defb79121df458c7607": "Merge branch 'ccwidgets' into ccwidgets",
+        "b27e3cb805fb1780169088ba66f30da7d0e85b5d": "chore(release): 1.28.0-ccwidgets.126 [skip ci]",
+        "58a2219aa4afbac016a82206890391eb60ddf8e0": "fix(widgets): fixed-outbound-fail-error (#555)",
+        "3d520c610ced7d92ce70e81563cfe9bf82cf401f": "chore(release): 1.28.0-ccwidgets.125 [skip ci]",
+        "f657c7ecde7cee3e70d6f20f483b731c144a6368": "fix(station-login): visibility toggle for desktop login (#554)",
+        "9294d8f5acf0288e2fb9091f685b23d1e6619ff5": "chore(release): 1.28.0-ccwidgets.124 [skip ci]",
+        "ab5fd64e6c8b6c9efaf85281d9b31cd5cac8a32e": "fix(cc-task): visibility toggle for conference feature (#553)",
+        "2ff45cd74fd3d8e7f1c0ab901341c0ce0e389100": "chore(release): 1.28.0-ccwidgets.123 [skip ci]",
+        "f2a23d4650fdf55ac9c44d489f45f13b3650341a": "feat(cc-widgets): multi party conference (#539)",
+        "6a2358cc8b7c5f23488cdfdc263983be54714af3": "chore(release): 1.28.0-ccwidgets.122 [skip ci]",
+        "a08cc66ef0a7fea0224a4c4f3bc899781c1ff6d8": "fix(cc-widgets): add license in package.json (#549)"
+      },
+      "alongWith": {
+        "@webex/cc-components": "1.28.0-ccwidgets.126",
+        "@webex/cc-station-login": "1.28.0-ccwidgets.126",
+        "@webex/cc-store": "1.28.0-ccwidgets.126",
+        "@webex/cc-task": "1.28.0-ccwidgets.126",
+        "@webex/test-fixtures": "0.0.0-ccwidgets.0",
+        "@webex/cc-ui-logging": "1.28.0-ccwidgets.126",
+        "@webex/cc-user-state": "1.28.0-ccwidgets.126",
+        "samples-cc-react-app": "0.0.0-ccwidgets.0",
+        "samples-cc-wc-app": "0.0.0-ccwidgets.0"
+      }
+    }
+  },
+  "@webex/cc-station-login": {
+    "1.28.0-alpha.11": {
+      "published_date": 1763442161148,
+      "commits": {
+        "2a99b703b914e81d5f89f580a1e8e767a65f6aaa": "chore(tooling): cache built distributables for deploy",
+        "0ffe5b41c849df32773ef03521fe0ad03f0c9881": "chore(tooling): dummy change to trigger a publish",
+        "6818129a2b00e0c2a10c7ee7721327a52c9b3ed2": "chore(tooling): remove yarn ws:tools from publish-tag",
+        "a5657fed2c3155fcc823d586642f093bd9a551c4": "chore(tooling): publish-tag on commit to ccwidgets branch",
+        "52f482ac00582a77b7d1e3f914210c05bb5cb33b": "chore(tooling): dummy commit to trigger a publish",
+        "c10ac1175a639c89f30b66839e77cd387cf3e71f": "fix(tooling): deploy action yarn dry run with -W flag",
+        "714cf19e76c56e4161d6e161532476155087964e": "Revert \"chore(tooling): dummy changes to trigger publish\"",
+        "3ced1090cf679b65e842a6ea2b15f72b231ce410": "fix(tooling): remove exec vulnerability in deploy.yml",
+        "2e0f5a79a9593b254add8f7d0494c1c7a9408c47": "chore(tooling): dummy changes to trigger publish",
+        "055166779b6b95d49a38c36f0ade5e5f3857a120": "fix(tooling): optimize build pipeline for deploy",
+        "21b81142cb518ad813ad0370b6321f06309d40d5": "fix(tooling): dont deploy if no changed packages"
+      },
+      "alongWith": {
+        "@webex/widgets": "1.28.2-v1.28",
+        "@webex/cc-components": "1.28.0-ccconnectors.1",
+        "@webex/cc-widgets": "1.28.0-ccwidgets.4"
+      }
+    },
+    "1.28.0-ccwidgets.125": {
+      "published_date": 1763976336156,
+      "commits": {
+        "344bd9fdef26eac6c1fb2d9ea483092e0a3734c4": "chore(tooling): dummy commit to trigger a release"
+      },
+      "alongWith": {
+        "@webex/cc-widgets": "1.28.0-ccwidgets.125",
+        "samples-cc-react-app": "0.0.0-ccwidgets.0",
+        "samples-cc-wc-app": "0.0.0-ccwidgets.0"
+      }
+    },
+    "1.28.0-ccwidgets.126": {
+      "published_date": 1764068359555,
+      "commits": {
+        "93c5ba91920318e4db5c1defb79121df458c7607": "Merge branch 'ccwidgets' into ccwidgets",
+        "b27e3cb805fb1780169088ba66f30da7d0e85b5d": "chore(release): 1.28.0-ccwidgets.126 [skip ci]",
+        "58a2219aa4afbac016a82206890391eb60ddf8e0": "fix(widgets): fixed-outbound-fail-error (#555)",
+        "3d520c610ced7d92ce70e81563cfe9bf82cf401f": "chore(release): 1.28.0-ccwidgets.125 [skip ci]",
+        "f657c7ecde7cee3e70d6f20f483b731c144a6368": "fix(station-login): visibility toggle for desktop login (#554)",
+        "9294d8f5acf0288e2fb9091f685b23d1e6619ff5": "chore(release): 1.28.0-ccwidgets.124 [skip ci]",
+        "ab5fd64e6c8b6c9efaf85281d9b31cd5cac8a32e": "fix(cc-task): visibility toggle for conference feature (#553)",
+        "2ff45cd74fd3d8e7f1c0ab901341c0ce0e389100": "chore(release): 1.28.0-ccwidgets.123 [skip ci]",
+        "f2a23d4650fdf55ac9c44d489f45f13b3650341a": "feat(cc-widgets): multi party conference (#539)",
+        "6a2358cc8b7c5f23488cdfdc263983be54714af3": "chore(release): 1.28.0-ccwidgets.122 [skip ci]",
+        "a08cc66ef0a7fea0224a4c4f3bc899781c1ff6d8": "fix(cc-widgets): add license in package.json (#549)"
+      },
+      "alongWith": {
+        "@webex/cc-components": "1.28.0-ccwidgets.126",
+        "@webex/cc-widgets": "1.28.0-ccwidgets.126",
+        "@webex/cc-store": "1.28.0-ccwidgets.126",
+        "@webex/cc-task": "1.28.0-ccwidgets.126",
+        "@webex/test-fixtures": "0.0.0-ccwidgets.0",
+        "@webex/cc-ui-logging": "1.28.0-ccwidgets.126",
+        "@webex/cc-user-state": "1.28.0-ccwidgets.126",
+        "samples-cc-react-app": "0.0.0-ccwidgets.0",
+        "samples-cc-wc-app": "0.0.0-ccwidgets.0"
+      }
+    }
+  },
+  "@webex/cc-user-state": {
+    "1.28.0-ccwidgets.126": {
+      "published_date": 1764068359552,
+      "commits": {
+        "93c5ba91920318e4db5c1defb79121df458c7607": "Merge branch 'ccwidgets' into ccwidgets",
+        "b27e3cb805fb1780169088ba66f30da7d0e85b5d": "chore(release): 1.28.0-ccwidgets.126 [skip ci]",
+        "58a2219aa4afbac016a82206890391eb60ddf8e0": "fix(widgets): fixed-outbound-fail-error (#555)",
+        "3d520c610ced7d92ce70e81563cfe9bf82cf401f": "chore(release): 1.28.0-ccwidgets.125 [skip ci]",
+        "f657c7ecde7cee3e70d6f20f483b731c144a6368": "fix(station-login): visibility toggle for desktop login (#554)",
+        "9294d8f5acf0288e2fb9091f685b23d1e6619ff5": "chore(release): 1.28.0-ccwidgets.124 [skip ci]",
+        "ab5fd64e6c8b6c9efaf85281d9b31cd5cac8a32e": "fix(cc-task): visibility toggle for conference feature (#553)",
+        "2ff45cd74fd3d8e7f1c0ab901341c0ce0e389100": "chore(release): 1.28.0-ccwidgets.123 [skip ci]",
+        "f2a23d4650fdf55ac9c44d489f45f13b3650341a": "feat(cc-widgets): multi party conference (#539)",
+        "6a2358cc8b7c5f23488cdfdc263983be54714af3": "chore(release): 1.28.0-ccwidgets.122 [skip ci]",
+        "a08cc66ef0a7fea0224a4c4f3bc899781c1ff6d8": "fix(cc-widgets): add license in package.json (#549)"
+      },
+      "alongWith": {
+        "@webex/cc-components": "1.28.0-ccwidgets.126",
+        "@webex/cc-widgets": "1.28.0-ccwidgets.126",
+        "@webex/cc-station-login": "1.28.0-ccwidgets.126",
+        "@webex/cc-store": "1.28.0-ccwidgets.126",
+        "@webex/cc-task": "1.28.0-ccwidgets.126",
+        "@webex/test-fixtures": "0.0.0-ccwidgets.0",
+        "@webex/cc-ui-logging": "1.28.0-ccwidgets.126",
+        "samples-cc-react-app": "0.0.0-ccwidgets.0",
+        "samples-cc-wc-app": "0.0.0-ccwidgets.0"
+      }
+    }
+  },
+  "@webex/cc-ui-logging": {
+    "1.28.0-ccwidgets.126": {
+      "published_date": 1764068359553,
+      "commits": {
+        "93c5ba91920318e4db5c1defb79121df458c7607": "Merge branch 'ccwidgets' into ccwidgets",
+        "b27e3cb805fb1780169088ba66f30da7d0e85b5d": "chore(release): 1.28.0-ccwidgets.126 [skip ci]",
+        "58a2219aa4afbac016a82206890391eb60ddf8e0": "fix(widgets): fixed-outbound-fail-error (#555)",
+        "3d520c610ced7d92ce70e81563cfe9bf82cf401f": "chore(release): 1.28.0-ccwidgets.125 [skip ci]",
+        "f657c7ecde7cee3e70d6f20f483b731c144a6368": "fix(station-login): visibility toggle for desktop login (#554)",
+        "9294d8f5acf0288e2fb9091f685b23d1e6619ff5": "chore(release): 1.28.0-ccwidgets.124 [skip ci]",
+        "ab5fd64e6c8b6c9efaf85281d9b31cd5cac8a32e": "fix(cc-task): visibility toggle for conference feature (#553)",
+        "2ff45cd74fd3d8e7f1c0ab901341c0ce0e389100": "chore(release): 1.28.0-ccwidgets.123 [skip ci]",
+        "f2a23d4650fdf55ac9c44d489f45f13b3650341a": "feat(cc-widgets): multi party conference (#539)",
+        "6a2358cc8b7c5f23488cdfdc263983be54714af3": "chore(release): 1.28.0-ccwidgets.122 [skip ci]",
+        "a08cc66ef0a7fea0224a4c4f3bc899781c1ff6d8": "fix(cc-widgets): add license in package.json (#549)"
+      },
+      "alongWith": {
+        "@webex/cc-components": "1.28.0-ccwidgets.126",
+        "@webex/cc-widgets": "1.28.0-ccwidgets.126",
+        "@webex/cc-station-login": "1.28.0-ccwidgets.126",
+        "@webex/cc-store": "1.28.0-ccwidgets.126",
+        "@webex/cc-task": "1.28.0-ccwidgets.126",
+        "@webex/test-fixtures": "0.0.0-ccwidgets.0",
+        "@webex/cc-user-state": "1.28.0-ccwidgets.126",
+        "samples-cc-react-app": "0.0.0-ccwidgets.0",
+        "samples-cc-wc-app": "0.0.0-ccwidgets.0"
+      }
+    }
+  },
+  "@webex/cc-task": {
+    "1.28.0-ccwidgets.126": {
+      "published_date": 1764068359554,
+      "commits": {
+        "93c5ba91920318e4db5c1defb79121df458c7607": "Merge branch 'ccwidgets' into ccwidgets",
+        "b27e3cb805fb1780169088ba66f30da7d0e85b5d": "chore(release): 1.28.0-ccwidgets.126 [skip ci]",
+        "58a2219aa4afbac016a82206890391eb60ddf8e0": "fix(widgets): fixed-outbound-fail-error (#555)",
+        "3d520c610ced7d92ce70e81563cfe9bf82cf401f": "chore(release): 1.28.0-ccwidgets.125 [skip ci]",
+        "f657c7ecde7cee3e70d6f20f483b731c144a6368": "fix(station-login): visibility toggle for desktop login (#554)",
+        "9294d8f5acf0288e2fb9091f685b23d1e6619ff5": "chore(release): 1.28.0-ccwidgets.124 [skip ci]",
+        "ab5fd64e6c8b6c9efaf85281d9b31cd5cac8a32e": "fix(cc-task): visibility toggle for conference feature (#553)",
+        "2ff45cd74fd3d8e7f1c0ab901341c0ce0e389100": "chore(release): 1.28.0-ccwidgets.123 [skip ci]",
+        "f2a23d4650fdf55ac9c44d489f45f13b3650341a": "feat(cc-widgets): multi party conference (#539)",
+        "6a2358cc8b7c5f23488cdfdc263983be54714af3": "chore(release): 1.28.0-ccwidgets.122 [skip ci]",
+        "a08cc66ef0a7fea0224a4c4f3bc899781c1ff6d8": "fix(cc-widgets): add license in package.json (#549)"
+      },
+      "alongWith": {
+        "@webex/cc-components": "1.28.0-ccwidgets.126",
+        "@webex/cc-widgets": "1.28.0-ccwidgets.126",
+        "@webex/cc-station-login": "1.28.0-ccwidgets.126",
+        "@webex/cc-store": "1.28.0-ccwidgets.126",
+        "@webex/test-fixtures": "0.0.0-ccwidgets.0",
+        "@webex/cc-ui-logging": "1.28.0-ccwidgets.126",
+        "@webex/cc-user-state": "1.28.0-ccwidgets.126",
+        "samples-cc-react-app": "0.0.0-ccwidgets.0",
+        "samples-cc-wc-app": "0.0.0-ccwidgets.0"
+      }
+    }
+  },
+  "@webex/cc-store": {
+    "1.28.0-ccwidgets.126": {
+      "published_date": 1764068359554,
+      "commits": {
+        "93c5ba91920318e4db5c1defb79121df458c7607": "Merge branch 'ccwidgets' into ccwidgets",
+        "b27e3cb805fb1780169088ba66f30da7d0e85b5d": "chore(release): 1.28.0-ccwidgets.126 [skip ci]",
+        "58a2219aa4afbac016a82206890391eb60ddf8e0": "fix(widgets): fixed-outbound-fail-error (#555)",
+        "3d520c610ced7d92ce70e81563cfe9bf82cf401f": "chore(release): 1.28.0-ccwidgets.125 [skip ci]",
+        "f657c7ecde7cee3e70d6f20f483b731c144a6368": "fix(station-login): visibility toggle for desktop login (#554)",
+        "9294d8f5acf0288e2fb9091f685b23d1e6619ff5": "chore(release): 1.28.0-ccwidgets.124 [skip ci]",
+        "ab5fd64e6c8b6c9efaf85281d9b31cd5cac8a32e": "fix(cc-task): visibility toggle for conference feature (#553)",
+        "2ff45cd74fd3d8e7f1c0ab901341c0ce0e389100": "chore(release): 1.28.0-ccwidgets.123 [skip ci]",
+        "f2a23d4650fdf55ac9c44d489f45f13b3650341a": "feat(cc-widgets): multi party conference (#539)",
+        "6a2358cc8b7c5f23488cdfdc263983be54714af3": "chore(release): 1.28.0-ccwidgets.122 [skip ci]",
+        "a08cc66ef0a7fea0224a4c4f3bc899781c1ff6d8": "fix(cc-widgets): add license in package.json (#549)"
+      },
+      "alongWith": {
+        "@webex/cc-components": "1.28.0-ccwidgets.126",
+        "@webex/cc-widgets": "1.28.0-ccwidgets.126",
+        "@webex/cc-station-login": "1.28.0-ccwidgets.126",
+        "@webex/cc-task": "1.28.0-ccwidgets.126",
+        "@webex/test-fixtures": "0.0.0-ccwidgets.0",
+        "@webex/cc-ui-logging": "1.28.0-ccwidgets.126",
+        "@webex/cc-user-state": "1.28.0-ccwidgets.126",
+        "samples-cc-react-app": "0.0.0-ccwidgets.0",
+        "samples-cc-wc-app": "0.0.0-ccwidgets.0"
+      }
+    }
+  }
+}
